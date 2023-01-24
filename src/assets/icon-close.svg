@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.506" height="20.506" viewBox="0 0 20.506 20.506">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="icon-close" d="M17.925.747l2.828,2.828L13.328,11l7.425,7.425-2.828,2.828L10.5,13.828,3.075,21.253.247,18.425,7.671,11,.247,3.575,3.075.747,10.5,8.171Z" transform="translate(194.753 111.253)" fill="#242d52" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-195 -112)" clip-path="url(#clip-path)">
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(180 104)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="65" height="44" stroke="none"/>
+      <rect x="0.5" y="0.5" width="64" height="43" fill="none"/>
+    </g>
+  </g>
+</svg>
