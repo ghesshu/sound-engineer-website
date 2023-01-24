@@ -9,7 +9,7 @@ const Hero = (props) => {
     <div className='relative flex justify-center md:justify-between items-center h-5/6 text-white px-4'>
         
         {/* Previous Image Button */}
-        <button onClick={props.prevClick} className='hidden md:block'><img src={Prev} alt="" /></button>
+        <button onClick={props.prevClick} className='hidden md:block bg-black px-5 bg-opacity-40 p-4 rounded-full'><img src={Prev} alt="" className='h-6' /></button>
 
         {/* Hero Text */}
         <div className="flex flex-col items-center text-center space-y-4 ">
@@ -27,7 +27,7 @@ const Hero = (props) => {
         </div>
 
         {/* Next Image Button */}
-        <button onClick={props.nextClick} className='hidden md:block' ><img src={Next} alt="" /></button>
+        <button onClick={props.nextClick} className='hidden md:block bg-black px-5 p-4 rounded-full bg-opacity-40' ><img src={Next} alt="" className='h-6' /></button>
       
     </div>
   )

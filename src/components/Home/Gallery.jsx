@@ -56,6 +56,8 @@ const Gallery = (props) => {
   };
 
 
+
+
   // const handleNext = () => {
   //   let newImages = [...currentImages];
   //   newImages.pop();
@@ -78,6 +80,9 @@ const Gallery = (props) => {
     }, 500);
   };
 
+
+
+
   return (
     <div className=' hidden lg:block mt-20 px-8  space-y-16'>
 
@@ -96,7 +101,7 @@ const Gallery = (props) => {
       </button>
       
       
-
+      {/* Image Carousel */}
       <div className="  flex  text-center items-center space-x-16">
         {/* <img src="" alt="" className='w-60 h-60' />
         <img src="" alt="" className='w-60 h-60' />
