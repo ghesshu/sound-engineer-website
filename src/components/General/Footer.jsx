@@ -22,10 +22,13 @@ const Footer = () => {
             <div className="space-y-4">
                 <h1 className='font-bold text-2xl' >Our Campany</h1>
                 <div className="space-y-3">
-                    <h2>About Us</h2>
-                    <h2>Our History</h2>
-                    <h2>Our Team</h2>
-                    <h2>Our Philosophy</h2>
+                    <a href="about"><h2>About Us</h2></a>
+                    <a href="about"><h2>Our History</h2></a>
+                    <a href="about"><h2>Our Team</h2></a>
+                    <a href="about"><h2>Our Philosophy</h2></a>
+                    
+                    
+                    
                 </div>
             </div>
 
@@ -45,7 +48,7 @@ const Footer = () => {
 
         {/* Footer List Four */}
         <div className="self-center">
-        <h1 className='font-bold text-3xl lg:text-4xl'>LOGO</h1>
+        <a href="/"><h1 className='font-bold text-3xl lg:text-4xl'>LOGO</h1></a>
         </div>
 
         
