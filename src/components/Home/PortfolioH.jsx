@@ -24,12 +24,12 @@ const PortfolioH = () => {
 
 
   return (
-    <div className='mt-20 px-8 xl:px-36 space-y-16'>
+    <div className='mt-20 px-8 xl:px-36 space-y-8 slg:space-y-16'>
          {/* Heading */}
          <h1 className='font-extrabold text-2xl md:text-4xl' >Portfolio</h1>
 
       <div className={` ${images[index]} `}>
-      <div className="flex items-center justify-between h-[504px] p-8 bg-black bg-opacity-70">
+      <div className="flex items-center justify-between h-[504px] px-8 bg-black bg-opacity-70">
 
     
 

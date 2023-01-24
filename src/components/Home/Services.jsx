@@ -7,7 +7,7 @@ import '../Home/home.css'
 
 const Services = () => {
   return (
-    <div className='px-8 xl:px-36 space-y-16'>
+    <div className='px-8 xl:px-36 space-y-8 slg:space-y-16'>
 
         {/* Heading */}
         <h1 className='font-extrabold text-2xl md:text-4xl' >Services</h1>

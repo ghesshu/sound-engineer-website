@@ -95,7 +95,7 @@ const Gallery = (props) => {
 
       
       <button onClick={handlePrevious} className='md:block'>
-      <div className=" border-2 p-4 bg-black bg-opacity-60 px-5 rounded- rounded-full ">
+      <div className=" border-2 p-4 bg-black bg-opacity-60 px-5 rounded- rounded-full z-10 ">
       <img src={Prev} alt="" className='h-6' />
       </div>
       </button>

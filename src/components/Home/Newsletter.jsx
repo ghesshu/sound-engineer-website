@@ -29,7 +29,7 @@ const Newsletter = () => {
             <form action="" className='space-y-7'>
                 <div className="">
                 <label htmlFor="email"></label>
-                <input type="email" id='email' name='email' placeholder='Your email' className='border-b-4 w-96 bg-g bg-transparent' />
+                <input type="email" id='email' name='email' placeholder='Your email' className='border-b-4 w-72 md:w-96 bg-g bg-transparent' />
                 </div>
                
 
