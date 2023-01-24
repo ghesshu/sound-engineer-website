@@ -52,7 +52,7 @@ const Gallery = (props) => {
       setcurrrentImages(newImages);
       setIndex(newIndex < 0 ? images.length - 1 : newIndex);
       setAnimation("slide-in-right");
-    }, 500);
+    }, );
   };
 
 
@@ -77,7 +77,7 @@ const Gallery = (props) => {
       setcurrrentImages(newImages);
       setIndex(newIndex >= images.length ? 0 : newIndex);
       setAnimation("slide-in-left");
-    }, 500);
+    }, );
   };
 
 
