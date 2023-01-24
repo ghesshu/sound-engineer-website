@@ -34,7 +34,7 @@ const PortfolioH = () => {
     
 
     
-      <button onClick={handlePrevious} className='hidden md:block'><img src={Prev} alt="" /></button>
+      <button onClick={handlePrevious} className='md:block'><img src={Prev} alt="" /></button>
 
       <div className="text-white self-end mr-[250px] slg:mr-[450px]  lg:mr-[700px]">
         <h1 className='font-extrabold text-3xl' >Afro Nation</h1>
