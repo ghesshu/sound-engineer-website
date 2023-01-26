@@ -66,7 +66,7 @@ const Home = () => {
     <Services />
     </div>
 
-    <div className="" data-aos="zoom-out">
+    <div className="" data-aos="fade-uo">
     <Portfolio />
     </div>
 
