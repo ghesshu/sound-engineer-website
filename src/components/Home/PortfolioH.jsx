@@ -1,8 +1,10 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useTransition, animated } from 'react-spring'
 import Prev from '../../assets/Prev.svg'
 import Next from '../../assets/Next.svg'
 import Dnext from '../../assets/d-next.svg'
+import './home.css'
 
 const PortfolioH = () => {
 
@@ -21,29 +23,68 @@ const PortfolioH = () => {
       setIndex(newIndex >= images.length ? 0 : newIndex);
   };
 
+  // const transitions = useTransition(images[index], item => item, {
+  //   from: { opacity: 0 },
+  //   enter: { opacity: 1 },
+  //   leave: { opacity: 0 },
+  // });
+
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const newIndex = index + 1;
+      setIndex(newIndex >= images.length ? 0 : newIndex);
+    }, 8000);
+    return () => clearInterval(intervalId);
+  },[index,images.length]);
+
+  
 
 
   return (
+    // <div className='mt-20 px-8 xl:px-36 space-y-8 slg:space-y-16'>
+    //      {/* Heading */}
+    //      <h1 className='font-extrabold text-2xl md:text-4xl' >Portfolio</h1>
+
+    //   <div className={` ${images[index]} `}>
+    //   <div className="flex items-center justify-between h-[504px] px-8 bg-black bg-opacity-70">
+
+    
+
+    
+    //   <button onClick={handlePrevious} className='md:block'><img src={Prev} alt="" /></button>
+
+    //   <div className="text-white self-end mr-[250px] slg:mr-[450px]  lg:mr-[700px]">
+    //     <h1 className='font-extrabold text-3xl' >Afro Nation</h1>
+    //     <h1>Music Festival</h1>
+    //   </div>
+      
+
+    //   <button  onClick={handleNext}  className='hidden md:block'><img src={Next} alt="" /></button>
+    //   </div>
+    //   </div>
+    // </div>
+
+
     <div className='mt-20 px-8 xl:px-36 space-y-8 slg:space-y-16'>
          {/* Heading */}
          <h1 className='font-extrabold text-2xl md:text-4xl' >Portfolio</h1>
 
-      <div className={` ${images[index]} `}>
-      <div className="flex items-center justify-between h-[504px] px-8 bg-black bg-opacity-70">
+      <div className='carousel-container'>
+        {images.map((image, i) => (
+          <div key={i} className={` ${image} ${i === index ? 'active' : ''}`}>
+            <div className="flex items-center justify-between h-[504px] px-8 bg-black bg-opacity-70">
+              <button onClick={handlePrevious} className='md:block'><img src={Prev} alt="" /></button>
 
-    
+              <div className="text-white self-end mr-[250px] slg:mr-[450px]  lg:mr-[700px]">
+                <h1 className='font-extrabold text-3xl' >Afro Nation</h1>
+                <h1>Music Festival</h1>
+              </div>
 
-    
-      <button onClick={handlePrevious} className='md:block'><img src={Prev} alt="" /></button>
-
-      <div className="text-white self-end mr-[250px] slg:mr-[450px]  lg:mr-[700px]">
-        <h1 className='font-extrabold text-3xl' >Afro Nation</h1>
-        <h1>Music Festival</h1>
-      </div>
-      
-
-      <button  onClick={handleNext}  className='hidden md:block'><img src={Next} alt="" /></button>
-      </div>
+              <button  onClick={handleNext}  className='hidden md:block'><img src={Next} alt="" /></button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )

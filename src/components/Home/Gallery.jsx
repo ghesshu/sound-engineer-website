@@ -32,15 +32,7 @@ const Gallery = (props) => {
   }, []);
 
 
-  // const handlePrevious = () => {
-  //   let newImages = [...currentImages];
-  //   newImages.shift();
-  //   const newIndex = index - 1;
-  //   newImages.push(images[newIndex < 0 ? images.length - 1 : newIndex]);
-  //   setcurrrentImages(newImages);
-  //   setIndex(newIndex < 0 ? images.length - 1 : newIndex);
-  //   setAnimation("slide-in-right")
-  // };
+
 
   const handlePrevious = () => {
     let newImages = [...currentImages];
@@ -58,14 +50,6 @@ const Gallery = (props) => {
 
 
 
-  // const handleNext = () => {
-  //   let newImages = [...currentImages];
-  //   newImages.pop();
-  //   const newIndex = index + 1;
-  //   newImages.unshift(images[newIndex >= images.length ? 0 : newIndex]);
-  //   setcurrrentImages(newImages);
-  //   setIndex(newIndex >= images.length ? 0 : newIndex);
-  // };
 
   const handleNext = () => {
     let newImages = [...currentImages];

@@ -6,7 +6,7 @@ import Dnext from '../../assets/d-next.svg'
 
 const Hero = (props) => {
   return (
-    <div className='relative flex justify-center md:justify-between items-center h-5/6 text-white px-4'>
+    <div className='relative w-full flex justify-center md:justify-between  items-center h-5/6 text-white px-4'>
         
         {/* Previous Image Button */}
         <button onClick={props.prevClick} className='hidden md:block bg-black px-5 bg-opacity-40 p-4 rounded-full'><img src={Prev} alt="" className='h-6' /></button>

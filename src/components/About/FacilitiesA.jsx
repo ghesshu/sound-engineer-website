@@ -4,8 +4,8 @@ import Next from '../../assets/Next.svg'
 
 const FacilitiesA = () => {
   return (
-    <div>
-        <div className="bg bg-P-img-1  object-cover">
+    <div className='clear-left'>
+        <div className="bg bg-P-img-1  object-cover ">
         <div className="flex items-center justify-between h-[504px] p-8 bg-black bg-opacity-70">
 
     
