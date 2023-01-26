@@ -9,12 +9,12 @@ import Img4 from '../../assets/idex19-featured-1.jpeg'
 
 const Insights = () => {
   return (
-    <div className='mt-20 px-8 xl:px-36'>
+    <div className='mt-20 px-8 xl:px-36 space-y-6'>
 
          {/* Heading */}
          <h1 className='font-extrabold text-2xl md:text-4xl' >Insights</h1>
 
-         <div className="flex flex-col space-y-8 slg:space-y-0 justify-between slg:flex-row  pt-8">
+         <div className="flex flex-col space-y-16 slg:space-y-0 justify-between slg:flex-row  pt-8">
             <Posts
             postImg={Img1} 
             headOne='December 5, 2022  Events, Press Release' 

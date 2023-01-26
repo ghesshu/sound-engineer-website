@@ -2,7 +2,7 @@ import React from 'react'
 
 const Posts = (props) => {
   return (
-    <div className='border-2 p-7 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-500'>
+    <div className=' '>
       <div className="flex flex-col space-y-3 items-center ">
         <a href={props.imgLink}>
         <div className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ">
