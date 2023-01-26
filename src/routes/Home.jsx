@@ -56,9 +56,9 @@ const Home = () => {
     <Navbar/>
     </div>
     <div 
-    data-aos="zoom-in"
+    data-aos="fade-down"
     className="relative z-0 w-full h-screen">
-    <img src={images[index]} alt="" className={`object-cover w-full h-full ${slideIn} `} />
+    <img src={images[index]} alt="" className={`object-cover w-full h-full`} />
 
     <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0 bg-orange-900 bg-opacity-70 "
     >   
