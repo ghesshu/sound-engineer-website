@@ -8,10 +8,17 @@ import ContentP from '../components/Portfolio/ContentP'
 const Portfolio = () => {
   return (
     <div>
-      <div className="bg bg-black">
+       <div className="flex flex-col space-y-20 bg bg-black">
+      
+      <div className="absolute z-10">
       <Navbar />
-      <HeroP />
       </div>
+    
+
+    <div className="relative z-0 w-full">
+      <HeroP />
+    </div>
+    </div>
 
       <ContentP />
       <Brands />

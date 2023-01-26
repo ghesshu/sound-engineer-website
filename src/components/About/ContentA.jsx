@@ -106,7 +106,7 @@ const ContentA = () => {
        </div>
 
        {/* Mission */}
-       <div className="flex flex-col md:flex-row justify-center md:items-center smd:space-x-8 slg:space-x-12">
+       <div className="flex flex-col md:flex-row justify-center md:items-center md:space-x-8 slg:space-x-12">
 
         {/* Image */}
         <div className="py-6">

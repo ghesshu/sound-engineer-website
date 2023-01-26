@@ -43,7 +43,7 @@ const Home = () => {
     
 
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth w-full'>
       <div className="absolute z-10">
     <Navbar/>
     </div>
@@ -62,11 +62,11 @@ const Home = () => {
     <HeroTwo />
     </div>
     
-    <div className="" data-aos="fade-in">
+    <div className="" data-aos="flip-down">
     <Services />
     </div>
 
-    <div className="" data-aos="fade-uo">
+    <div className="" data-aos="fade-in">
     <Portfolio />
     </div>
 
@@ -75,7 +75,7 @@ const Home = () => {
     <Gallery />
     </div>
 
-    <div className=" mt-20 px-8 aos-item" data-aos="flip-up">
+    <div className=" mt-20 px-8 aos-item">
         <Brands />
     </div>
     

@@ -1,4 +1,5 @@
 import React from 'react'
+import HoverImg from '../General/HoverImg'
 import Img1 from '../../assets/Conferencing-scaled.jpg'
 import Img2 from '../../assets/rtaroute-1.jpeg'
 import Img3 from '../../assets/tomorrowland-featured1-.jpeg'
@@ -20,34 +21,29 @@ const Services = () => {
             
         <div className="flex space-x-4 lg:space-x-8">
             {/* Image 1 */}
-            <div className=" border-2  ">
-                <img src={Img1} alt="" className=' w-40 h-40 lg:h-[236px] lg:w-[236px] object-cover' />
-            </div>
+            <HoverImg image={Img1} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+
             {/* Image 2 */}
-            <div className=" border-2 ">
-            <img src={Img1} alt="" className='object-cover w-40 h-40 lg:h-[236px] lg:w-[236px]' />
-            </div>
+            <HoverImg image={Img1} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
         </div>
 
-        <div className="border-2 ">
-        <img src={Img2} alt="" className='object-cover h-40 w-[336px] lg:w-[510px] lg:h-[236px]' />
-        </div>
+        {/* Image 3 */}
+        <HoverImg image={Img2} displayText='Lorem' imgClass='h-40 w-[336px] lg:w-[510px] lg:h-[236px]' navTo='/' />
         </div>
 
 
         {/* Images Second Set */}
         <div className="flex space-x-4 lg:space-x-8">
-            <div className=" border-2">
-            <img src={Img3} alt="" className='object-cover h-[336px] lg:h-[510px] w-40 lg:w-[236px]' />
-            </div>
+
+            {/* Image 1 */}
+            <HoverImg image={Img3} displayText='Lorem' imgClass='h-[336px] lg:h-[510px] w-40 lg:w-[236px]' navTo='/' />
 
             <div className="flex flex-col space-y-4 lg:space-y-8">
-            <div className=" border-2">
-            <img src={Img4} alt="" className='object-cover w-40 h-40 lg:h-[236px] lg:w-[236px]' />
-            </div>
-            <div className=" border-2">
-            <img src={Img4} alt="" className='object-cover w-40 h-40 lg:h-[236px] lg:w-[236px]' />
-            </div>
+            {/* Image 2 */}
+            <HoverImg image={Img4} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+
+            {/* Image 3 */}
+            <HoverImg image={Img4} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
             </div>
 
         </div>

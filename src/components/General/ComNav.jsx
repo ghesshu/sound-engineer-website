@@ -20,9 +20,9 @@ const ComNav = () => {
       <div 
       onMouseLeave={() => setCList('hidden')}
       className={` ${cList} flex text-sm flex-col  space-y-3 bg-black bg-opacity-50 p-4`}>
-      <a className="border-b-2 p-1" href="gallery"><Button buttonClass="" buttonText="Our Work" /></a> 
-      <a className="border-b-2 p-1" href="portfolio"> <Button buttonClass="" buttonText="Testimonials" /></a>
-      <a className="border-b-2 p-1" href="gallery"> <Button buttonClass="" buttonText="DOWNLOADS" /></a>
+      <a className="border-b-2 hover:border-slate-500 p-1" href="gallery"><Button buttonClass="" buttonText="Our Work" /></a> 
+      <a className="border-b-2 hover:border-slate-500 p-1" href="portfolio"> <Button buttonClass="" buttonText="Testimonials" /></a>
+      <a className="border-b-2 hover:border-slate-500 p-1" href="gallery"> <Button buttonClass="" buttonText="DOWNLOADS" /></a>
       </div>
     </div>
   )
