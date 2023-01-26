@@ -21,29 +21,29 @@ const Services = () => {
             
         <div className="flex space-x-4 lg:space-x-8">
             {/* Image 1 */}
-            <HoverImg image={Img1} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+            <HoverImg headClass="mb-4 mr-11 px-2" image={Img1} displayText='Live Sound' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
 
             {/* Image 2 */}
-            <HoverImg image={Img1} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+            <HoverImg headClass="mb-4 mr-11 px-2" image={Img1} displayText='Backlines' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
         </div>
 
         {/* Image 3 */}
-        <HoverImg image={Img2} displayText='Lorem' imgClass='h-40 w-[336px] lg:w-[510px] lg:h-[236px]' navTo='/' />
+        <HoverImg headClass="mb-4 mr-56 px-2" image={Img2} displayText='Audio & Music Production' imgClass='h-40 w-[336px] lg:w-[510px] lg:h-[236px]' navTo='/' />
         </div>
-
+ 
 
         {/* Images Second Set */}
         <div className="flex space-x-4 lg:space-x-8">
 
             {/* Image 1 */}
-            <HoverImg image={Img3} displayText='Lorem' imgClass='h-[336px] lg:h-[510px] w-40 lg:w-[236px]' navTo='/' />
+            <HoverImg headClass="mb-4 mr-11 px-2" image={Img3} displayText='Video' imgClass='h-[336px] lg:h-[510px] w-40 lg:w-[236px]' navTo='/' />
 
             <div className="flex flex-col space-y-4 lg:space-y-8">
             {/* Image 2 */}
-            <HoverImg image={Img4} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+            <HoverImg headClass="mb-4 mr-11 px-2" image={Img4} displayText='Event Production' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
 
             {/* Image 3 */}
-            <HoverImg image={Img4} displayText='Lorem' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+            <HoverImg headClass="mb-4 mr-11 px-2" image={Img4} displayText='Streaming' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
             </div>
 
         </div>

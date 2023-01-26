@@ -17,7 +17,7 @@ const HoverImg = (props) => {
     } object-cover`} />
 
     <div className={`absolute z-10 ${hoverdiv}  flex flex-col  justify-end items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 `}>
-        <h1 className={`text-white text-2xl ${props.headClass} font-bold  px-2`} >{props.displayText}</h1>
+        <h1 className={`text-white text-sm md:text-2xl ${props.headClass} font-bold  px-2`} >{props.displayText}</h1>
     </div>
     </a>
     </div>

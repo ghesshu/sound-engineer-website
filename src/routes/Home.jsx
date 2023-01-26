@@ -37,6 +37,14 @@ const Home = () => {
     };
 
     useEffect(() => {
+      const intervalId = setInterval(() => {
+        const newIndex = index + 1;
+        setIndex(newIndex >= images.length ? 0 : newIndex);
+      }, 8000);
+      return () => clearInterval(intervalId);
+    },[index,images.length]);
+
+    useEffect(() => {
       Aos.init({duration: 1000});
     }, []);
 
