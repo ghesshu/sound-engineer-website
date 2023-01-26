@@ -14,17 +14,17 @@ const Services = () => {
         <h1 className='font-extrabold text-2xl md:text-4xl' >Services</h1>
 
 
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 smd:space-x-4 lg:space-x-8 justify-center">
+        <div className="flex flex-col  md:flex-row space-y-4 md:space-y-0 md:space-x-4 lg:space-x-8 justify-center items-center">
 
         {/* IMages First Set */}
         <div className="flex flex-col space-y-4 lg:space-y-8 justify-center items-center ">
             
         <div className="flex space-x-4 lg:space-x-8">
             {/* Image 1 */}
-            <HoverImg headClass="mb-4 mr-11 px-2" image={Img1} displayText='Live Sound' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+            <HoverImg headClass="mb-4 mr-11 px-2" image={Img1} displayText='Live Sound' imgClass=' hover:w-44 hover:h-44 w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
 
             {/* Image 2 */}
-            <HoverImg headClass="mb-4 mr-11 px-2" image={Img1} displayText='Backlines' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+            <HoverImg divClass='' headClass="mb-4 mr-11 px-2" image={Img1} displayText='Backlines' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
         </div>
 
         {/* Image 3 */}

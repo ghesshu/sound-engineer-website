@@ -23,7 +23,7 @@ const Newsletter = () => {
   return (
     <div className='mt-20 px-8 xl:px-36 bg-nl-img-4 text-white'>
 
-        <div className="space-y-8 py-20">
+        <div className="space-y-11 py-32">
             <h1 className='font-extrabold text-4xl lg:text-4xl'>SIGN UP FOR <br /> OUR NEWSLETTER</h1>
 
             <form action="" className='space-y-7'>

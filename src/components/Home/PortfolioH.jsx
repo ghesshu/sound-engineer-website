@@ -74,9 +74,9 @@ const PortfolioH = () => {
 
       <div className='relative w-full '>
 
-        <img src={images[index]} alt="" className=' h-[504px] w-full object-cover' />
+        <img src={images[index]} alt="" className=' h-[600px] w-full object-cover rounded-xl' />
 
-        <div className=" text-white absolute flex justify-between px-8 items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50">
+        <div className=" text-white absolute flex justify-between px-8 items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 rounded-xl">
           {/* Previous Button */}
         <button onClick={handlePrevious} className='md:block  bg-white p-2 px-3 md:p-4 md:px-5 bg-opacity-20 rounded-full'><img src={Prev} alt="" className=' h-4 md:h-6' /></button>
 

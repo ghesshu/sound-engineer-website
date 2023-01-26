@@ -8,7 +8,7 @@ const HeroTwo = () => {
 
       <div className="flex flex-col slg:flex-row justify-center items-center h-5/6 slg:space-x-8 space-y-4 slg:space-y-0">
 
-        <img src={HeroImg} alt="" className='w-auto slg:w-1/2' />
+        <img src={HeroImg} alt="" className='w-auto slg:w-1/2 rounded-xl' />
 
 
         <div className=" space-y-8">
