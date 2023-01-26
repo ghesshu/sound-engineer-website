@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../assets/nbg-logo.png'
 
 const Footer = () => {
   return (
@@ -48,7 +49,7 @@ const Footer = () => {
 
         {/* Footer List Four */}
         <div className="self-center">
-        <a href="/"><h1 className='font-bold text-3xl lg:text-4xl'>LOGO</h1></a>
+        <a href="/"><img src={logo} alt="" /></a>
         </div>
 
         

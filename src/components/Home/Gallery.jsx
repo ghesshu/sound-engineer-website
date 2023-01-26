@@ -91,6 +91,7 @@ const Gallery = (props) => {
         <img src="" alt="" className='w-60 h-60' />
         <img src="" alt="" className='w-60 h-60' />
         <img src="" alt="" className='w-60 h-60' /> */}
+        
         {currentImages.map((image, i) => (
           <img key={i} src={image} alt={`Image ${i +1}`} className={` rounded-xl w-44 h-44 xl:w-60 xl:h-60 border-2 
           carousel-image ${animation} 

@@ -7,6 +7,9 @@ import arrowUp from '../../assets/icon-arrow-up.svg'
 import arrowDown from '../../assets/icon-arrow-down.svg'
 import ServiceNav from './ServiceNav'
 import ComNav from './ComNav'
+import logo from '../../assets/nbg-logo.png'
+
+
 
 const Navbar = (props) => {
 
@@ -15,7 +18,11 @@ const Navbar = (props) => {
 
   return (
     <div className=' flex w-screen items- items-start justify-between p-4 lg:p-8 xl:px-24 2xl:36 mx-auto text-white'>
-      <h1 className='font-bold text-3xl lg:text-4xl'>LOGO</h1>
+      {/* <h1 className='font-bold text-3xl lg:text-4xl'>LOGO</h1> */}
+
+      <div className=" px-4 py-1 rounded-md">
+      <img src={logo} alt="" className='w-32' />
+      </div>
 
       <div className="hidden lg:flex space-x-4 slg:space-x-9 xl:space-x-16 font-bold text-sm lg:text-base">
 

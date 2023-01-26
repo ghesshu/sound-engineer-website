@@ -25,8 +25,8 @@ const HeroTwo = () => {
             <strong>We know how it is supposed to sound & Look and we Deliver</strong>
             </p>
 
-            {/* Read More Button */}
-            <button className='flex items-center space-x-3 bg-black py-2 px-3'>
+            {/* Read More Button */}–
+            <button className='flex items-center space-x-3 bg-black py-2 px-3 rounded-md'>
                 <p className='font-bold text-white' >READ MORE</p>
                 <img src={Dnext} alt="" />
             </button>

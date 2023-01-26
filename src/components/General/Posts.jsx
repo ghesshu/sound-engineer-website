@@ -5,7 +5,7 @@ const Posts = (props) => {
     <div className=' '>
       <div className="flex flex-col space-y-3 items-center ">
         <a href={props.imgLink}>
-        <div className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ">
+        <div className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 ">
             <img src={props.postImg} alt="" className=' rounded-md h-56 w-80 slg:w-64 slg:h-40 xl:h-56 xl:w-80 ' />
         </div>
         </a>

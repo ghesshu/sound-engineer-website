@@ -22,10 +22,11 @@ const ServiceNav = () => {
 
   return (
     
-    <div className="space-y-4">
-    <div 
+    <div className="space-y-4 "
     onMouseEnter={() => setSList('flex')}
-    
+    onMouseLeave={() => setSList('hidden')}
+    >
+    <div 
     id='service' className="flex space-x-2 items-center">
       <Button buttonClass="" buttonText="SERVICES" />
       <img src={arrowDown} alt="" className='w-4' />
@@ -34,8 +35,8 @@ const ServiceNav = () => {
 
         {/* DROPDOWN */}
       <div
-      onMouseLeave={() => setSList('hidden')}
-       className={` ${sList} text-sm flex-col -ml-8 space-y-3 bg-black bg-opacity-70 p-4 dropdown_menu dropdown_menu--animated dropdown_menu-8 `}>
+      data-aos=""
+       className={` ${sList} text-sm flex-col -ml-8 space-y-3 bg-black bg-opacity-70 p-4 `}>
 
 
         {/* Mini List 1 */}

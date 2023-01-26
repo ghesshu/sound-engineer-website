@@ -23,7 +23,7 @@ const Newsletter = () => {
   return (
     <div className='mt-20 px-8 xl:px-36 bg-nl-img-4 text-white'>
 
-        <div className="space-y-11 py-32">
+        <div className="space-y-14 py-32">
             <h1 className='font-extrabold text-4xl lg:text-4xl'>SIGN UP FOR <br /> OUR NEWSLETTER</h1>
 
             <form action="" className='space-y-7'>
@@ -34,7 +34,7 @@ const Newsletter = () => {
                
 
                 {/* <input type="submit" value="Sign Up" /> */}
-                <button className='flex items-center space-x-3 bg-black py-2e px-3'>
+                <button className='flex items-center space-x-3 bg-black py-2 px-3 rounded-md'>
                 <p className='font-bold' >SIGN UP</p>
                 <img src={Dnext} alt="" />
             </button>

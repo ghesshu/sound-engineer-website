@@ -18,7 +18,7 @@ const Hero = (props) => {
 
             {/* Read More Button */}
             <a href="about">
-            <button className='flex items-center space-x-3 bg-black py-2 px-3'>
+            <button className='flex items-center space-x-3 bg-black py-2 px-3 rounded-md'>
                 <p className='font-bold' >READ MORE</p>
                 <img src={Dnext} alt="" />
             </button>
