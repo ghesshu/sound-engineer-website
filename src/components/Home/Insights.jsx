@@ -15,7 +15,7 @@ const Insights = () => {
          <h1 className='font-extrabold text-2xl md:text-4xl xl:px-36' >Insights</h1>
 
          <div className="flex flex-col space-y-16 lg:space-y-0 justify-between items-center lg:flex-row  pt-8">
-            <div className="bg-black text-white p-6 rounded-xl lg:mx-0 h-[460px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700 ">
+            <div className="bg-black text-white py-6 px-3 md:p-6 rounded-2xl lg:mx-0 h-[460px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700">
             <Posts
             postImg={Img1} 
             headOne='December 5, 2022  Events, Press Release' 
@@ -23,7 +23,7 @@ const Insights = () => {
             subText='The BBC Good Food Show, Writer 2022 ...'
             />
             </div>
-            <div className="bg-white border-2 p-6 rounded-xl  h-[460px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700">
+            <div className="bg-white  drop-shadow-2xl p-6 rounded-2xl py-6 px-3 md:p-6  h-[460px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700">
             <Posts 
             postImg={Img2} 
             headOne='november 23, 2022  Events, Press Release' 
@@ -31,7 +31,7 @@ const Insights = () => {
             subText='The ICMIF (International Cooperative and Mutual Insurance Federation) recently celebrated ...' />
             </div>
 
-            <div className="bg-black text-white p-6 rounded-xl  h-[460px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700">
+            <div className="bg-black drop-shadow-2xl border-2 text-white p-6 rounded-2xl py-6 px-3 md:p-6  h-[460px] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-700">
             <Posts 
             postImg={Img3} 
             headOne='November 17, 2022  Events, Press Release' 
