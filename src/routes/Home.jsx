@@ -83,7 +83,7 @@ const Home = () => {
     <Gallery />
     </div>
 
-    <div className=" mt-20 px-8 aos-item">
+    <div className=" mt-16 px-8 aos-item">
         <Brands />
     </div>
     

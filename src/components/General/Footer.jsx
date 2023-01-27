@@ -6,7 +6,7 @@ import tw from '../../assets/white-twitter.gif'
 
 const Footer = () => {
   return (
-    <div className='mt-20  bg-black text-white' > 
+    <div className='mt-16  bg-black text-white' > 
 
     <div className="grid grid-cols-2 slg:grid-cols-4 p-4  md:px-8 xl:px-36 md:justify-items-center py-16 border-b-2">
         
