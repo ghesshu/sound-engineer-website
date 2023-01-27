@@ -12,17 +12,21 @@ const PortfolioH = () => {
 
   // CAROUSEL FUNCTION
   const [index, setIndex] = useState(0);
+  const [tIndex, tSetIndex] = useState(0);
   const images = [Img1, Img2, Img3];
+  const texts = ['Afro Nation', 'Cochella', 'Rapperholic'];
   const length = 3;
 
   const handlePrevious = () => {
       const newIndex = index - 1; 
       setIndex(newIndex < 0 ? images.length-1 : newIndex);
+      tSetIndex(newIndex < 0 ? texts.length-1 : newIndex)
   };
 
   const handleNext = () => {
       const newIndex = index + 1; 
       setIndex(newIndex >= images.length ? 0 : newIndex);
+      tSetIndex(newIndex >= texts.length ? 0 : newIndex)
   };
 
   // const transitions = useTransition(images[index], item => item, {
@@ -36,6 +40,7 @@ const PortfolioH = () => {
     const intervalId = setInterval(() => {
       const newIndex = index + 1;
       setIndex(newIndex >= images.length ? 0 : newIndex);
+      tSetIndex(newIndex >= texts.length ? 0 : newIndex);
     }, 8000);
     return () => clearInterval(intervalId);
   },[index,images.length]);
@@ -68,21 +73,21 @@ const PortfolioH = () => {
     // </div>
 
 
-    <div className='mt-20 px-8 xl:px-36 space-y-8 slg:space-y-16'>
+    <div className='mt-20 sm:px-8 xl:px-36 space-y-5 slg:space-y-12'>
          {/* Heading */}
-         <h1 className='font-extrabold text-2xl md:text-4xl' >Portfolio</h1>
+         <h1 className='font-extrabold text-2xl md:text-4xl p-8' >Portfolio</h1>
 
       <div className='relative w-full '>
 
-        <img src={images[index]} alt="" className=' h-[600px] w-full object-cover rounded-xl' />
+        <img src={images[index]} alt="" className='h-[400px] smd:h-[600px] w-full object-cover rounded-xl' />
 
         <div className=" text-white absolute flex justify-between px-8 items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 rounded-xl">
           {/* Previous Button */}
         <button onClick={handlePrevious} className='md:block  bg-white p-2 px-3 md:p-4 md:px-5 bg-opacity-20 rounded-full'><img src={Prev} alt="" className=' h-4 md:h-6' /></button>
 
           <div className="flex flex-col">
-          <h1 className='font-extrabold text-3xl' >Afro Nation</h1>
-          <h1>Music Festival</h1>
+          <h1 className='font-extrabold text-3xl' >{texts[tIndex]}</h1>
+          {/* <h1>Music Festival</h1> */}
           </div>
 
           {/* Next Button */}

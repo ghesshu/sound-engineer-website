@@ -1,5 +1,8 @@
 import React from 'react'
 import logo from '../../assets/nbg-logo.png'
+import fb from '../../assets/white-facebook.gif'
+import ig from '../../assets/white-instagram.gif'
+import tw from '../../assets/white-twitter.gif'
 
 const Footer = () => {
   return (
@@ -48,8 +51,16 @@ const Footer = () => {
         </div>
 
         {/* Footer List Four */}
+        <div className="flex flex-col space-y-6">
         <div className="self-center">
         <a href="/"><img src={logo} alt="" /></a>
+        </div>
+
+        <div className="flex space-x-3 justify-between px-6">
+        <a href="www.facebook.com"><img src={fb} alt="" className='h-11' /></a>
+        <a href="www.instagram.com"><img src={ig} alt="" className='h-10' /></a>
+        <a href="www.twitter.com"><img src={tw} alt="" className='h-11' /></a>
+        </div>
         </div>
 
         
