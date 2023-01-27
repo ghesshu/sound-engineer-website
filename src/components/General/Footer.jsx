@@ -6,7 +6,7 @@ import tw from '../../assets/white-twitter.gif'
 
 const Footer = () => {
   return (
-    <div className='mt-16  bg-black text-white' > 
+    <div className='mt-9 md:mt-16  bg-black text-white' > 
 
     <div className="grid grid-cols-2 slg:grid-cols-4 p-4  md:px-8 xl:px-36 md:justify-items-center py-16 border-b-2">
         
@@ -25,7 +25,7 @@ const Footer = () => {
             {/* Footer List Two */}
             <div className="space-y-4">
                 <h1 className='font-bold text-2xl' >Our Campany</h1>
-                <div className="space-y-3">
+                <div className="space-y-8">
                     <a href="about"><h2>About Us</h2></a>
                     <a href="about"><h2>Our History</h2></a>
                     <a href="about"><h2>Our Team</h2></a>
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         {/* Footer List Four */}
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col space-y-6 mt-9 smd:mt-0">
         <div className="self-center">
         <a href="/"><img src={logo} alt="" /></a>
         </div>

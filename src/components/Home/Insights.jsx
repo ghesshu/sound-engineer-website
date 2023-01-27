@@ -9,7 +9,7 @@ import Img4 from '../../assets/idex19-featured-1.jpeg'
 
 const Insights = () => {
   return (
-    <div className='mt-20 px-8 2xl:px-24 space-y-6'>
+    <div className='mt-9 md:mt-16 px-8 2xl:px-24  slg:space-y-6'>
 
          {/* Heading */}
          <h1 className='font-extrabold text-2xl md:text-4xl xl:px-36' >Insights</h1>
