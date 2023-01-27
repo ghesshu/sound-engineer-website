@@ -73,7 +73,7 @@ const PortfolioH = () => {
     // </div>
 
 
-    <div className='mt-20 sm:px-8 xl:px-36 space-y-5 slg:space-y-12'>
+    <div className='mt-20 p-2 md:px-8 xl:px-36 space-y-5 slg:space-y-12'>
          {/* Heading */}
          <h1 className='font-extrabold text-2xl md:text-4xl p-8' >Portfolio</h1>
 

@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='mt-20  bg-black text-white' > 
 
-    <div className="grid grid-cols-2 slg:grid-cols-4 p-3 md:px-8 xl:px-36 justify-items-center py-16 border-b-2">
+    <div className="grid grid-cols-2 slg:grid-cols-4 p-4  md:px-8 xl:px-36 md:justify-items-center py-16 border-b-2">
         
 
             {/* Footer List One */}
@@ -57,9 +57,9 @@ const Footer = () => {
         </div>
 
         <div className="flex space-x-3 justify-between px-6">
-        <a href="www.facebook.com"><img src={fb} alt="" className='h-11' /></a>
-        <a href="www.instagram.com"><img src={ig} alt="" className='h-10' /></a>
-        <a href="www.twitter.com"><img src={tw} alt="" className='h-11' /></a>
+        <a href="www.facebook.com"><img src={fb} alt="" className='h-8 md:h-11' /></a>
+        <a href="www.instagram.com"><img src={ig} alt="" className='h-8 md:h-10' /></a>
+        <a href="www.twitter.com"><img src={tw} alt="" className='h-8 md:h-11' /></a>
         </div>
         </div>
 
