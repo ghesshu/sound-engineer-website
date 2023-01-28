@@ -94,7 +94,7 @@ const Home = () => {
     <HeroTwo />
     </div>
     
-    <div className="" data-aos="flip-down">
+    <div className="" data-aos="fade-up">
     <Services />
     </div>
 
