@@ -48,7 +48,7 @@ const Navbar = (props) => {
             </div>
             </a>
              <ul>
-              <li className='p-8 hover:bg-slate-600 border-2 border-t-0 hover:text-white'><a href="#">View Equiqments</a></li>
+              <li className='p-8 hover:bg-black border-t-0 hover:text-white'><a href="#">View Equiqments</a></li>
              </ul>
 
              {/* 2nd list */}
@@ -57,7 +57,7 @@ const Navbar = (props) => {
           <h1>Backlines</h1> <img src={arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
             </div></a>
             <ul>
-              <li className='p-6 hover:bg-slate-600 border-2 hover:text-white'><a href="#">View Equiqments</a></li>
+              <li className='p-6 hover:bg-black  hover:text-white'><a href="#">View Equiqments</a></li>
              </ul>
             </li>
 
@@ -66,7 +66,7 @@ const Navbar = (props) => {
           <h1>Audio & Music <br />Production</h1> <img src={arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
             </div></a>
             <ul>
-              <li className='p-6 hover:bg-slate-600 border-2 hover:text-white'><a href="#">View Equqment</a></li>
+              <li className='p-6 hover:bg-black hover:text-white'><a href="#">View Equqment</a></li>
              </ul>
             </li>
             <li className='p-6 border-b-2'><a href="#">Video</a></li>
