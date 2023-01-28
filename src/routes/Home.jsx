@@ -18,6 +18,8 @@ import Img3 from '../assets/rtaroute-1.jpeg'
 import nxt from '../assets/Next.svg'
 import prev from '../assets/Prev.svg'
 import '../components/Home/home.css'
+import arrowDownB from '../assets/icon-arrow-down-black.gif'
+import arrowDown from '../assets/icon-arrow-down.svg'
 
 const Home = () => {
 
@@ -25,6 +27,7 @@ const Home = () => {
     // CAROUSEL FUNCTION
     const [index, setIndex] = useState(0);
     const [slideIn, setSlideIn] = useState("")
+    const [arrowColor, setArrowColor] = useState(arrowDown);
     const images = [Img1, Img2, Img3];
     const length = 3;
 
@@ -56,8 +59,14 @@ const Home = () => {
     const changeBackground = () => {
       if(window.scrollY >= 600) {
         setNavbar('bg-white text-black drop-shadow-2xl')
+        setArrowColor(arrowDownB)
+      } else if(window.scrollY <= 600){
+        setArrowColor(arrowDown)
+        setNavbar('bg-transparent text-white')
       } else {
         setNavbar('bg-transparent text-white')
+        
+        
       }
     };
   
@@ -68,7 +77,7 @@ const Home = () => {
   return (
     <div className='scroll-smooth w-full'>
       <div className="absolute z-10">
-    <Navbar navbar={navbar}/>
+    <Navbar navbar={navbar} arrowDownB={arrowColor} />
     </div>
     <div 
     data-aos="fade-down "

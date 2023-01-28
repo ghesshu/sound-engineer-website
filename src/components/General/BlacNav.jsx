@@ -12,9 +12,13 @@ const BlacNav = () => {
     const changeBackground = () => {
       if(window.scrollY >= 300) {
         setNavbar('bg-white text-black drop-shadow-2xl')
-      } else {
-        setNavbar('bg-black text-white')
         setArrowColor(arrowDownB)
+      } else if(window.scrollY < 300){
+        setArrowColor(arrowDown)
+        setNavbar('bg-black text-white')
+      } else  {
+        setNavbar('bg-black text-white')
+        
       }
     };
   
