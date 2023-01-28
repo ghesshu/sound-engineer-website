@@ -21,7 +21,7 @@ const Services = () => {
             
         <div className="flex space-x-4 lg:space-x-8">
             {/* Image 1 */}
-            <HoverImg headClass="mb-4 mr-11 px-2" image={Img1} displayText='Live Sound' imgClass=' hover:w-44 hover:h-44 w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
+            <HoverImg headClass="mb-4 mr-11 px-2" image={Img1} displayText='Live Sound' imgClass='  w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
 
             {/* Image 2 */}
             <HoverImg divClass='' headClass="mb-4 mr-11 px-2" image={Img1} displayText='Backlines' imgClass='w-40 h-40 lg:h-[236px] lg:w-[236px]' navTo='/' />
