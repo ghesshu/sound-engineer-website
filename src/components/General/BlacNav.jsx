@@ -6,8 +6,8 @@ import arrowDown from '../../assets/icon-arrow-down.svg'
 
 const BlacNav = () => {
 
-    const [navbar, setNavbar] = useState('text-white bg-black')
-    const [arrowColor, setArrowColor] = useState(arrowDown)
+    const [navbar, setNavbar] = useState('text-white bg-black');
+    const [arrowColor, setArrowColor] = useState(arrowDown);
 
     const changeBackground = () => {
       if(window.scrollY >= 300) {
@@ -22,7 +22,7 @@ const BlacNav = () => {
 
   return (
     <div>
-      <Navbar navbar={navbar} arrowDownB={setArrowColor} />
+      <Navbar navbar={navbar} arrowDownB={arrowColor} />
     </div>
   )
 }

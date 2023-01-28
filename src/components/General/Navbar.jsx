@@ -6,7 +6,7 @@ import hamopen from '../../assets/icon-hamburger.svg'
 import hamclose from '../../assets/icon-close.svg'
 import arrowUp from '../../assets/icon-arrow-up.svg'
 import arrowDown from '../../assets/icon-arrow-down.svg'
-import propsarrowDownB from '../../assets/icon-arrow-down-black.gif'
+import arrowDownB from '../../assets/icon-arrow-down-black.gif'
 import ServiceNav from './ServiceNav'
 import ComNav from './ComNav'
 import logo from '../../assets/nbg-logo.png'
@@ -44,7 +44,7 @@ const Navbar = (props) => {
             {/* 1st List */}
             <li className='p-8 border-b-2'><a href="#">
             <div className="flex space-x-2 items-center justify-between">
-          <h1>Live Sound</h1> <img src={props.arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
+          <h1>Live Sound</h1> <img src={arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
             </div>
             </a>
              <ul>
@@ -54,7 +54,7 @@ const Navbar = (props) => {
              {/* 2nd list */}
             </li>
             <li className='p-6 border-b-2'><a href="#"> <div className="flex space-x-2 items-center justify-between">
-          <h1>Backlines</h1> <img src={props.arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
+          <h1>Backlines</h1> <img src={arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
             </div></a>
             <ul>
               <li className='p-6 hover:bg-slate-600 border-2 hover:text-white'><a href="#">View Equiqments</a></li>
@@ -63,7 +63,7 @@ const Navbar = (props) => {
 
             {/* 3rd */}
             <li className='p-6 border-b-2'><a href="#"><div className="flex space-x-2 items-center justify-between">
-          <h1>Audio & Music <br />Production</h1> <img src={props.arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
+          <h1>Audio & Music <br />Production</h1> <img src={arrowDownB} alt="" className=' w-5 object-cover -rotate-90' />
             </div></a>
             <ul>
               <li className='p-6 hover:bg-slate-600 border-2 hover:text-white'><a href="#">View Equqment</a></li>
