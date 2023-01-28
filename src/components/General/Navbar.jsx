@@ -26,8 +26,8 @@ const Navbar = (props) => {
 
       <a href="" className=''><img src={logo} alt="" className='h-12' /></a>
 
-      <input type="checkbox" id="menu-bar" />
-      <label htmlFor="menu-bar">Menu</label>
+      {/* <input type="checkbox" id="menu-bar" />
+      <label htmlFor="menu-bar">Menu</label> */}
 
       <nav className="navbar text-sm font-bold 2xl:text-base p-8 ">
         <ul className='space-x-4 slg:space-x-9 2xl:space-x-16 '>
@@ -76,7 +76,7 @@ const Navbar = (props) => {
           </li>
 
 
-          <li><a href="#">GALLERY </a></li>
+          <li><a href="gallery">GALLERY </a></li>
           <li><a href="#">PORTFOLIO</a></li>
 
           <li><a href="#">
@@ -91,7 +91,7 @@ const Navbar = (props) => {
           </ul>
           </li>
 
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="contact">CONTACT</a></li>
         </ul>
       </nav>
 
