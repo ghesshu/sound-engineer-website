@@ -15,6 +15,9 @@ import Brands from '../components/General/Brands'
 import Img1 from '../assets/tomorrowland-featured1-.jpeg'
 import Img2 from '../assets/sadara-featured1-1.jpeg'
 import Img3 from '../assets/rtaroute-1.jpeg'
+import nxt from '../assets/Next.svg'
+import prev from '../assets/Prev.svg'
+import '../components/Home/home.css'
 
 const Home = () => {
 
@@ -48,12 +51,24 @@ const Home = () => {
       Aos.init({duration: 1000});
     }, []);
 
+    const [navbar, setNavbar] = useState('text-white bg-transparent')
+
+    const changeBackground = () => {
+      if(window.scrollY >= 600) {
+        setNavbar('bg-white text-black drop-shadow-2xl')
+      } else {
+        setNavbar('bg-transparent text-white')
+      }
+    };
+  
+    window.addEventListener('scroll', changeBackground);
+
     
 
   return (
     <div className='scroll-smooth w-full'>
       <div className="absolute z-10">
-    <Navbar/>
+    <Navbar navbar={navbar}/>
     </div>
     <div 
     data-aos="fade-down "
@@ -96,8 +111,6 @@ const Home = () => {
     </div>
    
     <Footer />
-    
-
     </div>
   )
 }

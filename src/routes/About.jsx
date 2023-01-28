@@ -1,24 +1,27 @@
 import React from 'react'
 import Navbar from '../components/General/Navbar'
+import BlacNav from '../components/General/BlacNav'
 import HeroA from '../components/About/HeroA'
 import ContentA from '../components/About/ContentA'
 
 const About = () => {
   return (
     <div>
-      <div className="flex flex-col space-y-20 bg bg-black">
+      <div className="relative flex flex-col space-y-20 ">
       
         <div className="absolute z-10">
-        <Navbar />
+        <BlacNav />
         </div>
       
 
-      <div className="relative z-0 w-full">
+      <div className="relative z-0 w-full bg-black">
         <HeroA />
       </div>
       </div>
+      
 
       <ContentA />
+      
       
     </div>
   )

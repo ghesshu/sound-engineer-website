@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/General/Navbar'
+import BlacNav from '../components/General/BlacNav'
 import ContentG from '../components/Gallery/ContentG'
 import HeroG from '../components/Gallery/HeroG'
 import Brands from '../components/General/Brands'
@@ -13,7 +13,7 @@ const Gallery = () => {
        <div className="flex flex-col space-y-20 bg bg-black">
       
       <div className="absolute z-10">
-      <Navbar />
+      <BlacNav />
       </div>
     
 

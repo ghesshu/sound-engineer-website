@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/General/Navbar'
+import BlacNav from '../components/General/BlacNav'
 import HeroCT from '../components/Contact/HeroCT'
 import ContentCT from '../components/Contact/ContentCT'
 import Brands from '../components/General/Brands'
@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div>
         <div className="bg-black">
-            <Navbar />
+            <BlacNav />
             <HeroCT />
         </div>
         

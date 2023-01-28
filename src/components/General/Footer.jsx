@@ -13,7 +13,7 @@ const Footer = () => {
 
             {/* Footer List One */}
             <div className="space-y-4">
-                <h1 className='font-bold text-2xl' >Solutions</h1>
+                <h1 className='font-bold text-2xl border-b-4 p-2' >Solutions</h1>
                 <div className="space-y-3">
                     <h2>Live Productions</h2>
                     <h2>Virtual Events</h2>
@@ -24,12 +24,12 @@ const Footer = () => {
 
             {/* Footer List Two */}
             <div className="space-y-4">
-                <h1 className='font-bold text-2xl' >Our Campany</h1>
-                <div className="space-y-8">
-                    <a href="about"><h2>About Us</h2></a>
-                    <a href="about"><h2>Our History</h2></a>
-                    <a href="about"><h2>Our Team</h2></a>
-                    <a href="about"><h2>Our Philosophy</h2></a>
+                <h1 className='font-bold text-2xl border-b-4 p-2' >Our Campany</h1>
+                <div className="space-y-3">
+                    <h2><a href="">Abot Us</a></h2>
+                    <h2><a href="">Our History</a></h2>
+                    <h2><a href="">Our Team</a></h2>
+                    <h2><a href="">Our Philosophy</a></h2>
                     
                     
                     
@@ -43,7 +43,7 @@ const Footer = () => {
 
         {/* Footer List Three */}
         <div className="space-y-4 pt-12 slg:pt-0">
-        <h1 className='font-bold text-2xl' >Legal</h1>
+        <h1 className='font-bold text-2xl border-b-4 p-2' >Legal</h1>
         <div className="space-y-3">
             <h2>Privacy Policy</h2>
             <h2>Terms of Service</h2>
@@ -56,10 +56,10 @@ const Footer = () => {
         <a href="/"><img src={logo} alt="" /></a>
         </div>
 
-        <div className="flex space-x-3 justify-between px-6">
-        <a href="www.facebook.com"><img src={fb} alt="" className='h-8 md:h-11' /></a>
-        <a href="www.instagram.com"><img src={ig} alt="" className='h-8 md:h-10' /></a>
-        <a href="www.twitter.com"><img src={tw} alt="" className='h-8 md:h-11' /></a>
+        <div className="flex space-x-3 justify-between lg:justify-center px-6">
+        <a href="www.facebook.com"><img src={fb} alt="" className='h-6 md:h-8' /></a>
+        <a href="www.instagram.com"><img src={ig} alt="" className='h-6 md:h-8' /></a>
+        <a href="www.twitter.com"><img src={tw} alt="" className='h-6 md:h-8' /></a>
         </div>
         </div>
 

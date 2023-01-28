@@ -10,6 +10,8 @@ import Img4 from '../../assets/idex19-featured-1.jpeg'
 import Img5 from '../../assets/jeddah-featured1-1.jpeg'
 import Img6 from '../../assets/sadara-featured1-1.jpeg'
 
+import './home.css'
+
 
 
 const Gallery = (props) => {
@@ -34,41 +36,29 @@ const Gallery = (props) => {
 
 
 
-  const handlePrevious = () => {
-    let newImages = [...currentImages];
-    newImages.shift();
-    const newIndex = index - 1;
-    newImages.push(images[newIndex < 0 ? images.length - 1 : newIndex]);
-    setAnimation("slide-out-left")
-    setTimeout(() => {
-      setcurrrentImages(newImages);
-      setIndex(newIndex < 0 ? images.length - 1 : newIndex);
-      setAnimation("slide-in-right");
-    }, );
-  };
+    const productContainers = [...document.querySelectorAll('.product-container')];
+    const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+    const preBtn = [...document.querySelectorAll('.pre-btn')];
 
+    productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
 
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
 
-
-
-  const handleNext = () => {
-    let newImages = [...currentImages];
-    newImages.pop();
-    const newIndex = index + 1;
-    newImages.unshift(images[newIndex >= images.length ? 0 : newIndex]);
-    setAnimation("slide-out-right")
-    setTimeout(() => {
-      setcurrrentImages(newImages);
-      setIndex(newIndex >= images.length ? 0 : newIndex);
-      setAnimation("slide-in-left");
-    }, );
-  };
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+        
+    })
+    })
 
 
 
 
   return (
-    <div className=' hidden lg:block mt-20 px-8  space-y-16'>
+    <div className=' hidden md:block mt-20  px-8  space-y-16'>
 
     {/* Heading */}
     <h1 className='font-extrabold text-2xl md:text-4xl px-8 xl:px-36' >Gallery</h1>
@@ -78,45 +68,64 @@ const Gallery = (props) => {
       {/* Previous Image Button */}
 
       
-      <button onClick={handlePrevious} className='md:block'>
-      <div className=" border-2 p-4 bg-black bg-opacity-60 px-5 rounded- rounded-full z-10 ">
-      <img src={Prev} alt="" className='h-6' />
+      <button onClick={props.handlePrevious} className='pre-btn'>
+      <div className=" p-4 bg-black bg-opacity-60 px-5 rounded- rounded-full ">
+      <img src={Prev} alt="" className='h-4' />
       </div>
       </button>
+
       
       
-      {/* Image Carousel */}
-      <div className="  flex  text-center items-center space-x-16">
-        {/* <img src="" alt="" className='w-60 h-60' />
-        <img src="" alt="" className='w-60 h-60' />
-        <img src="" alt="" className='w-60 h-60' />
-        <img src="" alt="" className='w-60 h-60' /> */}
-        
-        {currentImages.map((image, i) => (
-          <img key={i} src={image} alt={`Image ${i +1}`} className={` rounded-xl w-44 h-44 xl:w-60 xl:h-60 border-2 
-          carousel-image ${animation} 
-          `}  />
-        ) )}
-      </div>
+      <div className="z-0 product">
+    <div className="product-container mx-20">
+            
+            <div className="product-card px-4">
+                <img src={Img3} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-car px-4d">
+                <img src={Img1}alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 wh44 smd:wh64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img3} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            <div className="product-card px-4">
+                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+            </div>
+            
+
+        </div>
+    </div>
 
 {/* Next Image Button */}
-    
-    <button onClick={handleNext} className='hidden md:block z-10' >
-      <div className="border-2 p-4 bg-black  bg-opacity-40 px-5 rounded- rounded-full"><img src={Next} alt="" className='h-6' /></div>
+<button onClick={props.handleNext} className='nxt-btn z-10' >
+      <div className=" p-4 bg-black  bg-opacity-60 px-5 rounded- rounded-full"><img src={Next} alt="" className='h-4 lg:h-6' /></div>
       </button>
+    
       
 
 
     </div>
-
-    <div className="flex justify-center space-x-1"> 
-    <span className='border-2 h-2 w-2 rounded-full bg-black border-black' ></span>
-    <span className='border-2 h-2 w-2 rounded-full border-black' ></span>
-    <span className='border-2 h-2 w-2 rounded-full border-black' ></span>
-    </div>
-    
-    
-      
     </div>
   )
 }

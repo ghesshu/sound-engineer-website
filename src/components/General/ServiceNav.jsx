@@ -24,7 +24,7 @@ const ServiceNav = () => {
     
     <div className="space-y-4 "
     onMouseEnter={() => setSList('flex')}
-    onMouseLeave={() => setSList('hidden')}
+    
     >
     <div 
     id='service' className="flex space-x-2 items-center">
@@ -36,22 +36,22 @@ const ServiceNav = () => {
         {/* DROPDOWN */}
       <div
       data-aos=""
-       className={` ${sList} text-sm flex-col -ml-8 space-y-3 bg-black bg-opacity-70 p-4 `}>
+       className={` ${sList} absolute text-sm flex-col -ml-8 space-y-3 bg-black bg-opacity-70 p-4 `}>
 
 
         {/* Mini List 1 */}
-        <div className="flex flex-col space-y-3">
+        <div className="flex  space-x-9 left-[200px]">
         <div 
          onMouseEnter={() => setMiniclass('flex')}
-        className="flex space-x-4 border-b-2 hover:border-slate-500 p-1">
+        className="flex static space-x-4 border-b-2 hover:border-slate-500 p-1">
         <h1 className='w-5/6' >Live Sound</h1>
-        <img src={arrowDown} alt="" className='w-4' />
+        <img src={arrowDown} alt="" className='w-4 -rotate-90' />
         </div>
 
         <div 
         onMouseLeave={() => setMiniclass('hidden')}
-        className={` ${miniLclass} text-xs text-center`}>
-          <button>View Equiqment</button>
+        className={` ${miniLclass} relative text-xs text-center`}>
+          <button className='relative'>View Equiqment</button>
         </div>
         </div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/General/Navbar'
+import BlacNav from '../components/General/BlacNav'
 import Brands from '../components/General/Brands'
 import Footer from '../components/General/Footer'
 import HeroP from '../components/Portfolio/HeroP'
@@ -11,7 +11,7 @@ const Portfolio = () => {
        <div className="flex flex-col space-y-20 bg bg-black">
       
       <div className="absolute z-10">
-      <Navbar />
+      <BlacNav />
       </div>
     
 
