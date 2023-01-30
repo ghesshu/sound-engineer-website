@@ -21,6 +21,7 @@ import '../components/Home/home.css'
 import arrowDownB from '../assets/icon-arrow-down-black.gif'
 import arrowDown from '../assets/icon-arrow-down.svg'
 
+
 const Home = () => {
 
 

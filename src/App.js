@@ -7,8 +7,8 @@ import Contact from './routes/Contact';
 import Gallery from './routes/Gallery';
 import Portfolio from './routes/Portfolio';
 import About from './routes/About';
-import Services from './routes/Services';
-import Communication from './routes/Communication';
+// import Services from './routes/Services';
+// import Communication from './routes/Communication';
 
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
     <Route path='gallery' element={<Gallery/>} />
     <Route path='/portfolio' element={<Portfolio/>} />
     <Route path='/about' element={<About/>} />
-    <Route path='services' element={<Services/>} />
-    <Route path='communication' element={<Communication/>} />
+    {/* <Route path='services' element={<Services/>} /> */}
+    {/* <Route path='communication' element={<Communication/>} /> */}
     </Routes>
 
     

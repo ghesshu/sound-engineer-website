@@ -24,7 +24,7 @@ const Navbar = (props) => {
 
     <div className={`${props.navbar} head flex items-center justify-between fixed top-0 left-0 right-0 px-12 xl:px-24 mx-auto drop-shadow-2xl`}>
 
-      <a href="" className=''><img src={logo} alt="" className='h-12' /></a>
+      <a href="" className=''><img src={logo} alt="" className='h-8 md:h-12' /></a>
 
       {/* <input type="checkbox" id="menu-bar" />
       <label htmlFor="menu-bar">Menu</label> */}
