@@ -7,7 +7,7 @@ import ContentA from '../components/About/ContentA'
 const About = () => {
   return (
     <div>
-      <div className="relative flex flex-col space-y-20 ">
+      <div className="relative flex flex-col">
       
         <div className="absolute z-10">
         <BlacNav />

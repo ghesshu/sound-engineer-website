@@ -36,7 +36,9 @@ const ContentA = () => {
         </div>
 
         
+        <div className="-mx-7 smd:-mx-0">
         <FacilitiesA />
+        </div>
       </div>
 
       {/* About Part Two */}
@@ -59,10 +61,10 @@ const ContentA = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <img src={Img1} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
-            <img src={Img2} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
-            <img src={Img3} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
-            <img src={Img4} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
+            <img src={Img1} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover rounded-lg' />
+            <img src={Img2} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover rounded-lg' />
+            <img src={Img3} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover rounded-lg' />
+            <img src={Img4} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover rounded-lg' />
             <img src={Img2} alt="" className='hidden md:block border-2 w-60 h-60' />
         </div>
 
@@ -101,7 +103,7 @@ const ContentA = () => {
 
         {/* Image */}
         <div className="py-6">
-            <img src={VM} alt="" className='h-52 w-96' />
+            <img src={VM} alt="" className='h-52 w-96 rounded-xl' />
         </div>
        </div>
 
@@ -110,7 +112,7 @@ const ContentA = () => {
 
         {/* Image */}
         <div className="py-6">
-            <img src={VM} alt="" className='h-52 w-96' />
+            <img src={VM} alt="" className='h-52 w-96 rounded-xl' />
         </div>
 
         {/* Text */}
