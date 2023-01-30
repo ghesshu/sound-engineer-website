@@ -37,14 +37,14 @@ const ContentCT = () => {
         <div className="flex flex-col space-y-16">
       <div className="flex space-x-4 justify-between">
       <input
-        className='border-b-2 border-slate-700 w-1/2'
+        className='border-b-2 border-slate-700 w-1/2 bg-transparent outline-0 py-4'
         type="text"
         placeholder="Your Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
       <input
-       className='border-b-2 border-slate-700 w-1/2'
+       className='border-b-2 border-slate-700 w-1/2 bg-transparent outline-0 py-4'
         type="email"
         placeholder="Your Email"
         value={email}
@@ -52,14 +52,14 @@ const ContentCT = () => {
       />
       </div>
       <input
-       className='border-b-2 border-slate-700'
+       className='border-b-2 border-slate-700 bg-transparent outline-0 py-4'
         type="text"
         placeholder="Subject"
         value={subject}
         onChange={(e) => setSubject(e.target.value)}
       />
       <textarea
-       className='border-b-2 border-slate-700'
+       className='border-b-2 border-slate-700 bg-transparent outline-0 rounded-none'
         placeholder="Your Message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
