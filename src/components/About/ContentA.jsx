@@ -59,10 +59,10 @@ const ContentA = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <img src={Img1} alt="" className='border-2 w-60 h-60' />
-            <img src={Img2} alt="" className='border-2 w-60 h-60' />
-            <img src={Img3} alt="" className='border-2 w-60 h-60' />
-            <img src={Img4} alt="" className='border-2 w-60 h-60' />
+            <img src={Img1} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
+            <img src={Img2} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
+            <img src={Img3} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
+            <img src={Img4} alt="" className='border-2 w-40 h-40 smd:w-60 smd:h-60 object-cover' />
             <img src={Img2} alt="" className='hidden md:block border-2 w-60 h-60' />
         </div>
 
