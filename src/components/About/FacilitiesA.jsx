@@ -14,18 +14,38 @@ const FacilitiesA = () => {
 
     // CAROUSEL FUNCTION
     const [index, setIndex] = useState(0);
+    const [visible, setVisible] = useState(false);
     const images = [Img1, Img2, Img3];
     const length = 3;
   
+    // const handlePrevious = () => {
+    //     const newIndex = index - 1; 
+    //     setIndex(newIndex < 0 ? images.length-1 : newIndex);
+    // };
+
     const handlePrevious = () => {
-        const newIndex = index - 1; 
-        setIndex(newIndex < 0 ? images.length-1 : newIndex);
-    };
+      setVisible(false);
+      setTimeout(() => {
+          const newIndex = index - 1; 
+          setIndex(newIndex < 0 ? images.length-1 : newIndex);
+          setVisible(true);
+      }, 500);
+  };
   
+    // const handleNext = () => {
+    //     const newIndex = index + 1; 
+    //     setIndex(newIndex >= images.length ? 0 : newIndex);
+    // };
+
     const handleNext = () => {
-        const newIndex = index + 1; 
-        setIndex(newIndex >= images.length ? 0 : newIndex);
-    };
+      setVisible(false);
+      setTimeout(() => {
+          const newIndex = index + 1; 
+          setIndex(newIndex >= images.length ? 0 : newIndex);
+          setVisible(true);
+      }, 500);
+  };
+
   
     // const transitions = useTransition(images[index], item => item, {
     //   from: { opacity: 0 },
@@ -34,10 +54,23 @@ const FacilitiesA = () => {
     // });
   
   
+    // useEffect(() => {
+    //   const intervalId = setInterval(() => {
+    //     const newIndex = index + 1;
+    //     setIndex(newIndex >= images.length ? 0 : newIndex);
+    //   }, 8000);
+    //   return () => clearInterval(intervalId);
+    // },[index,images.length]);
+
     useEffect(() => {
+      setVisible(true);
       const intervalId = setInterval(() => {
-        const newIndex = index + 1;
-        setIndex(newIndex >= images.length ? 0 : newIndex);
+        setVisible(false);
+        setTimeout(() => {
+            const newIndex = index + 1;
+            setIndex(newIndex >= images.length ? 0 : newIndex);
+            setVisible(true);
+        }, 500);
       }, 8000);
       return () => clearInterval(intervalId);
     },[index,images.length]);
@@ -46,7 +79,12 @@ const FacilitiesA = () => {
 
     <div className='relative w-full'>
 
-    <img src={images[index]} alt="" className=' h-[504px] w-full object-cover rounded-xl' />
+    {/* <img src={images[index]} alt="" className=' h-[504px] w-full object-cover rounded-xl' /> */}
+    <img 
+        src={images[index]} 
+        alt="" 
+        className={`object-cover w-full h-[504px] rounded-xl transition duration-1000 ease-in-out ${visible ? 'opacity-100' : 'opacity-25'}`} 
+    />
 
     <div className=" text-white absolute flex justify-between px-8 items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 rounded-xl">
       {/* Previous Button */}
