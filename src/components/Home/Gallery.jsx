@@ -69,8 +69,8 @@ const Gallery = (props) => {
 
       
       <button onClick={props.handlePrevious} className='pre-btn'>
-      <div className=" p-4 bg-black bg-opacity-60 px-5 rounded- rounded-full ">
-      <img src={Prev} alt="" className='h-4' />
+      <div className="p-2 md:p-4 bg-black bg-opacity-60 px-3 md:px-5  rounded- rounded-full ">
+      <img src={Prev} alt="" className='h-2 md:h-4 lg:h-6' />
       </div>
       </button>
 
@@ -119,7 +119,7 @@ const Gallery = (props) => {
 
 {/* Next Image Button */}
 <button onClick={props.handleNext} className='nxt-btn z-10' >
-      <div className=" p-4 bg-black  bg-opacity-60 px-5 rounded- rounded-full"><img src={Next} alt="" className='h-4 lg:h-6' /></div>
+      <div className="p-2 md:p-4 bg-black  bg-opacity-60 px-3 md:px-5 rounded- rounded-full"><img src={Next} alt="" className='h-2 md:h-4 lg:h-6' /></div>
       </button>
     
       
