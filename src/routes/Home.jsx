@@ -149,7 +149,7 @@ const Home = () => {
     </div>
 
     
-    <div className="" data-aos="fade-right">
+    <div className="" data-aos="fade-left">
     <Gallery />
     </div>
 

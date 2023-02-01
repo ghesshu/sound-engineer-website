@@ -77,7 +77,7 @@ const Gallery = (props) => {
       
       
       <div className="z-0 product">
-    <div className="product-container mx-20">
+    <div className="product-container mx-4 md:mx-20">
             
             <div className="product-card px-4">
                 <img src={Img3} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
