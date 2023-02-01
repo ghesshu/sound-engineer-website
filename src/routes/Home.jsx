@@ -20,6 +20,7 @@ import prev from '../assets/Prev.svg'
 import '../components/Home/home.css'
 import arrowDownB from '../assets/icon-arrow-down-black.gif'
 import arrowDown from '../assets/icon-arrow-down.svg'
+import "./routes.css"
 
 
 const Home = () => {
@@ -29,28 +30,65 @@ const Home = () => {
     const [index, setIndex] = useState(0);
     const [slideIn, setSlideIn] = useState("")
     const [arrowColor, setArrowColor] = useState(arrowDown);
+    const [visible, setVisible] = useState(false);
     const images = [Img1, Img2, Img3];
     const length = 3;
 
+    // const handlePrevious = () => {
+    //     const newIndex = index - 1; 
+    //     setIndex(newIndex < 0 ? images.length-1 : newIndex);
+    // };
+
     const handlePrevious = () => {
-        const newIndex = index - 1; 
-        setIndex(newIndex < 0 ? images.length-1 : newIndex);
-    };
+      setVisible(false);
+      setTimeout(() => {
+          const newIndex = index - 1; 
+          setIndex(newIndex < 0 ? images.length-1 : newIndex);
+          setVisible(true);
+      }, 1000);
+  };
+
+    // const handleNext = () => {
+    //     const newIndex = index + 1; 
+    //     setIndex(newIndex >= images.length ? 0 : newIndex);
+    //     setSlideIn('c-img')
+    // };
 
     const handleNext = () => {
-        const newIndex = index + 1; 
-        setIndex(newIndex >= images.length ? 0 : newIndex);
-        setSlideIn('c-img')
-    };
+      setVisible(false);
+      setTimeout(() => {
+          const newIndex = index + 1; 
+          setIndex(newIndex >= images.length ? 0 : newIndex);
+          setVisible(true);
+      }, 1000);
+  };
+  
+
+  
+
+    // useEffect(() => {
+    //   const intervalId = setInterval(() => {
+    //     const newIndex = index + 1;
+    //     setIndex(newIndex >= images.length ? 0 : newIndex);
+    //   }, 8000);
+    //   return () => clearInterval(intervalId);
+    // },[index,images.length]);
 
     useEffect(() => {
+      setVisible(true);
       const intervalId = setInterval(() => {
-        const newIndex = index + 1;
-        setIndex(newIndex >= images.length ? 0 : newIndex);
+        setVisible(false);
+        setTimeout(() => {
+            const newIndex = index + 1;
+            setIndex(newIndex >= images.length ? 0 : newIndex);
+            setVisible(true);
+        }, 500);
       }, 8000);
       return () => clearInterval(intervalId);
     },[index,images.length]);
 
+    
+    
     useEffect(() => {
       Aos.init({duration: 1000});
     }, []);
@@ -83,7 +121,14 @@ const Home = () => {
     <div 
     data-aos="fade-down "
     className="relative z-0 w-full h-screen">
-    <img src={images[index]} alt="" className={`object-cover w-full h-full`} />
+
+    {/* <img src={images[index]} alt="" className={`object-cover w-full h-full`} /> */}
+    <img 
+        src={images[index]} 
+        alt="" 
+        className={`object-cover w-full h-full transition duration-1000 ease-in-out ${visible ? 'opacity-100' : 'opacity-25'}`} 
+    />
+
 
     <div className="absolute flex justify-center items-center top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 rounded-b-xl "
     >   

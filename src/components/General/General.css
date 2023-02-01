@@ -1,19 +1,5 @@
 /* Navbar Code */
 
- /* .head{
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    background: white;
-    padding: 0px 7px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
- } */
-
- /* .head .navbar ul{
-    display: inline;
- } */
 
  .head{
     z-index: 1000;
@@ -35,10 +21,6 @@
     
   }
 
-  /* .head .navbar ul li a:hover{
-    background: rgb(201, 200, 200);
-    color: #fff;
-  }  */
 
 
   .head .navbar ul li ul{

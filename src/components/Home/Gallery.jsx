@@ -58,7 +58,7 @@ const Gallery = (props) => {
 
 
   return (
-    <div className=' hidden md:block mt-20  px-8  space-y-16'>
+    <div className='mt-20  px-8  space-y-16'>
 
     {/* Heading */}
     <h1 className='font-extrabold text-2xl md:text-4xl px-8 xl:px-36' >Gallery</h1>
@@ -80,37 +80,37 @@ const Gallery = (props) => {
     <div className="product-container mx-20">
             
             <div className="product-card px-4">
-                <img src={Img3} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img3} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img1} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img2} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-car px-4d">
-                <img src={Img1}alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img1}alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 wh44 smd:wh64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img2} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:wh44 md:wh64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img1} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img2} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img1} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img3} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img3} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img2} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img2} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             <div className="product-card px-4">
-                <img src={Img1} alt="" className=' w-44 smd:w-64 slg:w-80 h-44 smd:h-64 slg:h-80 object-cover rounded-xl' />
+                <img src={Img1} alt="" className=' w-32 smd:w-44 md:w-64 slg:w-80 h-32 smd:h-44 md:h-64 slg:h-80 object-cover rounded-xl' />
             </div>
             
 
