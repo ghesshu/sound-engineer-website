@@ -68,7 +68,7 @@ const Gallery = (props) => {
       {/* Previous Image Button */}
 
       
-      <button onClick={props.handlePrevious} className='pre-btn'>
+      <button onClick={props.handlePrevious} className='z-10 pre-btn'>
       <div className="p-2 md:p-4 bg-black bg-opacity-60 px-3 md:px-5  rounded- rounded-full ">
       <img src={Prev} alt="" className='h-2 md:h-4 lg:h-6' />
       </div>
